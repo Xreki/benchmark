@@ -41,7 +41,7 @@ def collect_subconfig_info():
         else:
             json_file = obj.name + '.json'
 
-        if obj.name in special_op_list.NO_BACKWARD_API:
+        if obj.name in special_op_list.NO_BACKWARD_OPS:
             backend = False
         else:
             backend = True
